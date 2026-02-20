@@ -1,6 +1,3 @@
-import os
-import telebot
-
 TOKEN = os.environ.get("TOKEN")
 bot = telebot.TeleBot(TOKEN)
 
@@ -68,4 +65,4 @@ def handle_message(message):
         bot.reply_to(message, MENU, parse_mode="Markdown")
 
 print("Bot started...")
-bot.infinity_polling()
+bot.infinity_polling() 
